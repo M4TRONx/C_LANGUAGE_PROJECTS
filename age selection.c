@@ -1,7 +1,25 @@
 #include<stdio.h>
 
+void yes();
+void no();
+
 int main(){
 
+    char a;
+    printf("You Started Age Selection ? y/n : ");
+    scanf("%c",&a);
+
+    if (a=='y' || a=='Y'){
+
+        yes();
+    }
+    else{
+        no();
+    }
+    return 0;
+}
+
+void yes(){
 
     int age,you=0;
     printf("Enter Your Age : ");
@@ -21,5 +39,8 @@ int main(){
             printf("Invalid Age !");
         }
 
-    return 0;
+}
+
+void no(){
+
 }
